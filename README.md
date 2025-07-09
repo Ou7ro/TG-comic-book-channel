@@ -14,8 +14,8 @@ pip install -r requirements.txt
 Для работы бота необходимо создать файл .env в корне проекта и указать в нем:
 
 ```
-TG_TOKEN_BOT=ваш_токен_бота
-TG_CHANNEL_ID=id_вашего_канала
+TG_TOKEN_BOT=@channel_id
+TG_CHANNEL_ID=70:AAF6WNExMPE4po0dp...
 ```
 
 Где:

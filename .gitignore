@@ -3,6 +3,7 @@ __pycache__/
 *.py[cod]
 *$py.class
 
+
 # C extensions
 *.so
 
@@ -24,7 +25,10 @@ share/python-wheels/
 *.egg-info/
 .installed.cfg
 *.egg
+.python-version
 MANIFEST
+pyproject.toml
+uv.lock
 
 # PyInstaller
 #  Usually these files are written by a python script from a template
@@ -130,6 +134,7 @@ celerybeat.pid
 # Environments
 .env
 .venv
+myenv
 env/
 venv/
 ENV/

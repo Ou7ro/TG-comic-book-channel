@@ -25,10 +25,10 @@ def download_comics(url, file_name):
 
     response = requests.get(url)
     response.raise_for_status()
-    url_contents = response.json()
+    comics_metadata = response.json()
 
-    comics_url = url_contents.get('img')
-    comics_title = url_contents.get('alt')
+    comics_url = comics_metadata.get('img')
+    comics_title = comics_metadata.get('alt')
     response = requests.get(comics_url)
 
     with open(file_name, 'wb') as file:

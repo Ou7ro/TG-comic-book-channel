@@ -28,13 +28,10 @@ def download_comics(url, file_name):
     comics_metadata = response.json()
 
     comics_url = comics_metadata.get('img')
-    comics_title = comics_metadata.get('alt')
     response = requests.get(comics_url)
 
     with open(file_name, 'wb') as file:
         file.write(response.content)
-
-    print(comics_title)
 
 
 def delete_comics(file_name):

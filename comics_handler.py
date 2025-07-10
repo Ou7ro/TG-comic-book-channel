@@ -3,8 +3,8 @@ from random import randint
 from pathlib import Path
 
 
-def get_random_comics():
-    """ Генерация случайного номера
+def get_random_comics_url():
+    """ Генерация url для случайного комикса
 
     Returns:
         str: url случайного комикса

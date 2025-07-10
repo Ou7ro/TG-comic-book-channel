@@ -1,7 +1,7 @@
 from environs import env
 from bot_utils import send_comics
 from comics_handler import (
-    get_random_comics,
+    get_random_comics_url,
     download_comics,
     delete_comics
 )
@@ -12,7 +12,7 @@ from requests import RequestException
 def main():
     env.read_env()
 
-    url = get_random_comics()
+    url = get_random_comics_url()
     env.read_env()
     file_name = 'comics.png'
     tg_bot_token = env.str('TG_TOKEN_BOT')

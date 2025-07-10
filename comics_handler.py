@@ -43,11 +43,6 @@ def delete_comics(file_name):
     Args:
         file_name (str): название файла
     """
-    try:
-        path = Path(file_name)
-        if path.is_file():
-            path.unlink()
-    except FileNotFoundError:
-        print('Комикс не найден')
-    except PermissionError:
-        print('Нет прав на удаление')
+    path = Path(file_name)
+    if path.is_file():
+        path.unlink()
